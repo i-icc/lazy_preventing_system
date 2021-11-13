@@ -20,5 +20,5 @@ class Images:
 
     def human_perception(self):
         image = self.get_image()
-        
+
         pass
