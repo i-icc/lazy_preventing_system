@@ -1,21 +1,16 @@
-import cv2
-import numpy as np
 from argparse import ArgumentParser
+
+from images import Images 
 
 def main():
     args = get_args()
     # load camera
-    cam = cv2.VideoCapture(args.camera_number)
-    if not cam.isOpened():
+    images = Images(args.camera_number)
+    if not images.is_cam_ok:
         print("The camera could not be loaded.")
         return
-
-    # get Image
-    while True:
-        ret, frame = cam.read()
-        cv2.imshow("test", frame)
-        cv2.waitKey(1)
-        cv2.destroyAllWindows()
+    
+    images.show_image()
 
 def human_perception(image):
     pass
