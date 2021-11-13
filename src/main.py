@@ -10,10 +10,6 @@ def main():
         print("The camera could not be loaded.")
         return
     
-    images.show_image()
-
-def human_perception(image):
-    pass
     
 def get_args():
     parser = ArgumentParser(description="lazy_preventing_system")
