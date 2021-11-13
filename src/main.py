@@ -16,6 +16,9 @@ def main():
         cv2.imshow("test", frame)
         cv2.waitKey(1)
         cv2.destroyAllWindows()
+
+def human_perception(image):
+    pass
     
 def get_args():
     parser = ArgumentParser(description="lazy_preventing_system")
