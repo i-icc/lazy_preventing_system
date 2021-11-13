@@ -9,6 +9,8 @@ def main():
     if not images.is_cam_ok:
         print("The camera could not be loaded.")
         return
+
+    images.show_image()
     
     
 def get_args():
